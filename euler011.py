@@ -74,7 +74,76 @@ for i in range(5):
 	listeCalcul1.append(resultat) 
 
 
-print('Results : ',listeCalcul1,'\n')
-print("Highest multiplication of 4 numbers : ",max(listeCalcul1))
+# print('Results : ',listeCalcul1,'\n')
+# print("Highest multiplication of 4 numbers : ",max(listeCalcul1))
 
 # calcul testGrid en diagonal :
+liste=[]
+for i in range(len(testGrid)-1):
+	print(testGrid[i][i])
+	liste.append(testGrid[i][i])
+	print(liste)
+resultat=1
+for i in liste:
+	resultat = resultat * i
+	print('resultat1',resultat)
+listeCalcul1.append(resultat) 
+
+print('\n')
+liste=[]
+for i in range(len(testGrid)-1):
+	print(testGrid[i][i+1])
+	liste.append(testGrid[i][i+1])
+	print(liste)
+	
+resultat=1
+for i in liste:
+	resultat = resultat * i
+	print('resultat1',resultat)
+listeCalcul1.append(resultat) 
+
+print('\n')
+liste=[]
+for i in range(len(testGrid)-1):
+	print(testGrid[i+1][i])
+	liste.append(testGrid[i+1][i])
+	print(liste)
+resultat=1
+for i in liste:
+	resultat = resultat * i
+	print('resultat1',resultat)
+listeCalcul1.append(resultat) 
+
+liste=[]
+for i in range(len(testGrid)-1):
+	print(testGrid[i][len(testGrid)-i-1])
+	liste.append((testGrid[i][len(testGrid)-i-1]))
+	print(liste)
+resultat=1
+for i in liste:
+	resultat = resultat * i
+	print('resultat1',resultat)
+liste=[]
+for i in range(len(testGrid)-1):
+	print(testGrid[i][len(testGrid)-i-2])
+	liste.append((testGrid[i][len(testGrid)-i-2]))
+	print(liste)
+resultat=1
+for i in liste:
+	resultat = resultat * i
+	print('resultat1',resultat)
+listeCalcul1.append(resultat) 
+
+liste=[]
+for i in range(len(testGrid)-1):
+	print(testGrid [i+1][len(testGrid)-i-1])
+	liste.append((testGrid [i+1][len(testGrid)-i-1]))
+	print(liste)
+resultat=1
+for i in liste:
+	resultat = resultat * i
+	print('resultat1',resultat)
+listeCalcul1.append(resultat)
+
+print('Results : ',listeCalcul1,'\n')
+print("Highest multiplication of 4 numbers : ",max(listeCalcul1))
